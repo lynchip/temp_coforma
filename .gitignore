@@ -1,0 +1,5 @@
+# Ignore the design archive
+*.zip
+
+# Common local/editor files
+.DS_Store
