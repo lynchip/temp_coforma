@@ -35,7 +35,7 @@ function AccountingCompliancePage() {
               Once your entity is registered, operational continuity requires structured ongoing accounting, tax declarations, and legal governance tailored for foreign shareholders.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.6, color: "rgba(20,19,17,.75)", marginTop: 28 }}>
-              While our primary client engagements begin with company formation and entry advisory, CoForma provides seamless post-incorporation practice management to ensure complete tax and regulatory compliance under Brazilian law.
+              Post incorporation management is essential to ensure complete tax and regulatory compliance under Brazilian law.
             </p>
           </div>
           <div style={{ paddingLeft: 32, borderLeft: `1px solid ${rule}` }}>
@@ -57,7 +57,7 @@ function AccountingCompliancePage() {
           <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 80, marginBottom: 60 }}>
             <div className="caps mono" style={{ fontSize: 11, color: "rgba(244,241,234,.55)" }}>Details</div>
             <h2 className="serif" style={{ fontSize: "clamp(36px, 3.5vw, 56px)", lineHeight: 1.05, margin: 0, letterSpacing: "-0.02em" }}>
-              Our Post-Incorporation Framework
+              Post-Incorporation Framework
             </h2>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, borderTop: `1px solid rgba(244,241,234,.18)`, paddingTop: 60 }}>
@@ -65,14 +65,14 @@ function AccountingCompliancePage() {
               <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>01 · TAX & ACCOUNTING</div>
               <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Monthly Bookkeeping & Reporting</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                Brazil's tax system (Lucro Presumido or Simples Nacional) requires rigorous monthly declarations even if an entity is temporarily dormant. We coordinate filings through specialized CPA partners, maintaining clear English translation summaries for board oversight.
+                The Brazilian tax system requires rigorous monthly declarations even if an entity is temporarily inactive.
               </p>
             </div>
             <div>
               <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>02 · REGULATORY GOVERNANCE</div>
               <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Legal Representation & BACEN</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                Foreign-owned entities must maintain a Brazilian resident legal representative before Receita Federal and the Central Bank (BACEN). We handle routine corporate resolutions, capital declarations, and annual corporate housekeeping.
+                Foreign-owned entities must maintain a Brazilian resident legal representative before Receita Federal and the Central Bank (BACEN). Routine corporate resolutions, capital declarations, and annual corporate housekeeping.
               </p>
             </div>
           </div>

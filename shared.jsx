@@ -55,15 +55,16 @@ const COFORMA_ONGOING_SERVICES = [
 
 const COFORMA_SERVICES = [...COFORMA_CORE_SERVICES, ...COFORMA_ONGOING_SERVICES];
 
-// A placeholder for the user's Bootstrap Studio form. We link out.
+// Interactive Contact Form — styled to match broadsheet, integrated with Bootstrap Studio form handler
 function ContactBlock({ variant = "light" }) {
   const dark = variant === "dark";
   const bg = dark ? "transparent" : "transparent";
   const fg = dark ? "#f4f1ea" : "#141311";
   const muted = dark ? "rgba(244,241,234,.6)" : "rgba(20,19,17,.55)";
   const rule = dark ? "rgba(244,241,234,.18)" : "rgba(20,19,17,.14)";
+  
   return (
-    <div style={{ background: bg, color: fg, padding: "80px 0", borderTop: `1px solid ${rule}` }}>
+    <div id="contact" style={{ background: bg, color: fg, padding: "80px 0", borderTop: `1px solid ${rule}` }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 40px", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80 }}>
         <div>
           <div className="caps mono" style={{ fontSize: 11, color: muted, marginBottom: 24 }}>— Contact</div>
@@ -74,25 +75,143 @@ function ContactBlock({ variant = "light" }) {
             Send a note describing what you plan to set up in Brazil. We reply personally, usually within one business day.
           </p>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end" }}>
-          <div style={{ border: `1px solid ${rule}`, padding: "32px 32px 28px", background: dark ? "rgba(255,255,255,.02)" : "rgba(0,0,0,.015)" }}>
-            <div className="caps mono" style={{ fontSize: 10, color: muted, marginBottom: 20 }}>Contact form</div>
-            <div style={{ fontSize: 15, lineHeight: 1.55, color: fg, marginBottom: 24 }}>
-              The intake form lives on the production site. This placeholder holds the position; the current form (Bootstrap Studio) will be dropped in here without change.
+        
+        <div>
+          <form 
+            method="post" 
+            data-bss-recipient="formations@coforma.com.br"
+            style={{ border: `1px solid ${rule}`, padding: "32px", background: dark ? "rgba(255,255,255,.02)" : "rgba(0,0,0,.015)" }}
+          >
+            <div className="caps mono" style={{ fontSize: 10, color: muted, marginBottom: 24 }}>Direct Enquiry</div>
+
+            {/* Name */}
+            <div style={{ marginBottom: 20 }}>
+              <label className="mono caps" style={{ display: "block", fontSize: 10, color: muted, marginBottom: 6 }}>Full Name *</label>
+              <input 
+                type="text" 
+                name="name" 
+                required 
+                placeholder="Jane Doe"
+                style={{ 
+                  width: "100%", 
+                  background: "transparent", 
+                  border: 0, 
+                  borderBottom: `1px solid ${rule}`, 
+                  padding: "8px 0", 
+                  color: fg, 
+                  fontSize: 14, 
+                  outline: "none",
+                  fontFamily: "Inter"
+                }} 
+              />
             </div>
-            {/* mock form fields, non-interactive placeholder shape */}
-            {["Full name", "Company", "Email", "Where are you writing from?", "What are you setting up in Brazil?"].map((label, i) => (
-              <div key={i} style={{ borderBottom: `1px solid ${rule}`, padding: "14px 0" }}>
-                <div className="mono" style={{ fontSize: 10, color: muted, textTransform: "uppercase", letterSpacing: ".12em" }}>{label}</div>
-              </div>
-            ))}
-            <div style={{ marginTop: 28, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <span className="mono" style={{ fontSize: 11, color: muted }}>No newsletter. No CRM. Just a reply.</span>
-              <button style={{ background: fg, color: dark ? "#141311" : "#f4f1ea", border: 0, padding: "12px 22px", fontFamily: "Inter", fontSize: 13, letterSpacing: ".04em", cursor: "pointer" }}>
+
+            {/* Company */}
+            <div style={{ marginBottom: 20 }}>
+              <label className="mono caps" style={{ display: "block", fontSize: 10, color: muted, marginBottom: 6 }}>Company / Organization</label>
+              <input 
+                type="text" 
+                name="company" 
+                placeholder="Acme Corp"
+                style={{ 
+                  width: "100%", 
+                  background: "transparent", 
+                  border: 0, 
+                  borderBottom: `1px solid ${rule}`, 
+                  padding: "8px 0", 
+                  color: fg, 
+                  fontSize: 14, 
+                  outline: "none",
+                  fontFamily: "Inter"
+                }} 
+              />
+            </div>
+
+            {/* Email */}
+            <div style={{ marginBottom: 20 }}>
+              <label className="mono caps" style={{ display: "block", fontSize: 10, color: muted, marginBottom: 6 }}>Email Address *</label>
+              <input 
+                type="email" 
+                name="email" 
+                required 
+                placeholder="jane@company.com"
+                style={{ 
+                  width: "100%", 
+                  background: "transparent", 
+                  border: 0, 
+                  borderBottom: `1px solid ${rule}`, 
+                  padding: "8px 0", 
+                  color: fg, 
+                  fontSize: 14, 
+                  outline: "none",
+                  fontFamily: "Inter"
+                }} 
+              />
+            </div>
+
+            {/* Location */}
+            <div style={{ marginBottom: 20 }}>
+              <label className="mono caps" style={{ display: "block", fontSize: 10, color: muted, marginBottom: 6 }}>Where are you writing from?</label>
+              <input 
+                type="text" 
+                name="location" 
+                placeholder="City, Country"
+                style={{ 
+                  width: "100%", 
+                  background: "transparent", 
+                  border: 0, 
+                  borderBottom: `1px solid ${rule}`, 
+                  padding: "8px 0", 
+                  color: fg, 
+                  fontSize: 14, 
+                  outline: "none",
+                  fontFamily: "Inter"
+                }} 
+              />
+            </div>
+
+            {/* Message */}
+            <div style={{ marginBottom: 28 }}>
+              <label className="mono caps" style={{ display: "block", fontSize: 10, color: muted, marginBottom: 6 }}>What are you setting up in Brazil? *</label>
+              <textarea 
+                name="message" 
+                rows="3" 
+                required 
+                placeholder="Brief summary of your project..."
+                style={{ 
+                  width: "100%", 
+                  background: "transparent", 
+                  border: 0, 
+                  borderBottom: `1px solid ${rule}`, 
+                  padding: "8px 0", 
+                  color: fg, 
+                  fontSize: 14, 
+                  outline: "none",
+                  fontFamily: "Inter",
+                  resize: "vertical"
+                }}
+              />
+            </div>
+
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", paddingTop: 8 }}>
+              <span className="mono" style={{ fontSize: 11, color: muted }}>No newsletter. Just a reply.</span>
+              <button 
+                type="submit" 
+                style={{ 
+                  background: fg, 
+                  color: dark ? "#141311" : "#f4f1ea", 
+                  border: 0, 
+                  padding: "12px 24px", 
+                  fontFamily: "Inter", 
+                  fontSize: 13, 
+                  letterSpacing: ".04em", 
+                  cursor: "pointer" 
+                }}
+              >
                 Send message →
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
