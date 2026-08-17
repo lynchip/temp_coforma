@@ -7,14 +7,53 @@ const COFORMA_STATS = [
   { value: "EN·PT", label: "Bilingual counsel" },
 ];
 
-const COFORMA_SERVICES = [
-  { key: "formation", num: "01", title: "Company Formation", brief: "Incorporation, CNPJ, registered address, and filing support for new businesses in Brazil." },
-  { key: "trademarks", num: "02", title: "Trademarks & IP", brief: "Search, filing and monitoring at INPI. Renewals tracked so intellectual property stays protected." },
-  { key: "accounting", num: "03", title: "Accounting & Tax", brief: "Support for ongoing tax and accounting needs through trusted partners once the company is established." },
-  { key: "compliance", num: "04", title: "Compliance", brief: "Ongoing regulatory obligations, reporting, and practical corporate housekeeping for established businesses." },
-  { key: "hr", num: "05", title: "HR & Payroll", brief: "Guidance for local hiring, payroll, and labour compliance as the business grows." },
-  { key: "consulting", num: "06", title: "Business Consulting", brief: "Advice on market entry, structure, and long-term planning when the business is ready for the next step." },
+const COFORMA_CORE_SERVICES = [
+  { 
+    key: "formation", 
+    num: "01", 
+    title: "Company Formation", 
+    brief: "Full-service incorporation in Brazil: legal structuring, CNPJ registration, state/municipal licenses, registered address, and bank account setup guidance for foreign investors and enterprise clients." 
+  },
+  { 
+    key: "consulting", 
+    num: "02", 
+    title: "Business Consulting", 
+    brief: "Strategic advisory for international counsel and executives navigating Brazilian market entry, regulatory barriers, corporate restructuring, and day-to-day operational execution." 
+  },
 ];
+
+const COFORMA_ONGOING_SERVICES = [
+  { 
+    key: "accounting", 
+    num: "03", 
+    title: "Accounting & Tax Compliance", 
+    brief: "Ongoing monthly tax filings, book-keeping, financial statements, and regulatory reporting for foreign-owned entities.",
+    href: "accounting-compliance.html"
+  },
+  { 
+    key: "trademarks", 
+    num: "04", 
+    title: "Trademarks & IP Protection", 
+    brief: "Trademark searching, INPI filings, brand portfolio defense, and ongoing monitoring against infringement in Brazil.",
+    href: "#" 
+  },
+  { 
+    key: "compliance", 
+    num: "05", 
+    title: "Corporate Governance & Housekeeping", 
+    brief: "Annual filings, legal representation of foreign shareholders (BACEN/Receita), license renewals, and corporate record keeping.",
+    href: "accounting-compliance.html"
+  },
+  { 
+    key: "hr", 
+    num: "06", 
+    title: "HR & Labour Advisory", 
+    brief: "Practical guidance for local employment contracts, eSocial compliance, payroll setup, and Brazilian labor law navigation.",
+    href: "#"
+  },
+];
+
+const COFORMA_SERVICES = [...COFORMA_CORE_SERVICES, ...COFORMA_ONGOING_SERVICES];
 
 // A placeholder for the user's Bootstrap Studio form. We link out.
 function ContactBlock({ variant = "light" }) {
@@ -60,4 +99,4 @@ function ContactBlock({ variant = "light" }) {
   );
 }
 
-Object.assign(window, { COFORMA_STATS, COFORMA_SERVICES, ContactBlock });
+Object.assign(window, { COFORMA_STATS, COFORMA_SERVICES, COFORMA_CORE_SERVICES, COFORMA_ONGOING_SERVICES, ContactBlock });

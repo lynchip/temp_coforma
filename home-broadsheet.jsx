@@ -54,7 +54,7 @@ function HomeBroadsheet({ tweaks }) {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1.2fr", gap: 80, marginTop: 80, alignItems: "start" }}>
             <div>
               <p className="news" style={{ fontSize: 22, lineHeight: 1.45, margin: 0, fontWeight: 400 }}>
-                CoForma supports international founders, investors, and operators who need to set up and protect businesses in Brazil. With more than 25 years of practical experience, we guide clients from company formation and trademark protection through the early stages of doing business here.
+                CoForma supports international clients to set up businesses in Brazil. With more than 25 years of practical experience, we guide clients from company formation and trademark protection through the early stages of doing business here.
               </p>
               <div style={{ marginTop: 40, display: "flex", gap: 24, alignItems: "center" }}>
                 <a href="#contact" style={{ background: ink, color: paper, padding: "16px 28px", textDecoration: "none", fontSize: 14, letterSpacing: ".04em" }}>Start a conversation →</a>
@@ -118,26 +118,65 @@ function HomeBroadsheet({ tweaks }) {
         </div>
       </section>
 
-      {/* SERVICES — list, not cards */}
+      {/* SERVICES — Tiered structure: Core vs Ongoing */}
       <section id="services" style={{ background: ink, color: paper, padding: "120px 0" }}>
         <div style={{ maxWidth: 1360, margin: "0 auto", padding: "0 40px" }}>
-          <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 80, marginBottom: 80 }}>
-            <div className="caps mono" style={{ fontSize: 11, color: "rgba(244,241,234,.55)" }}>Services</div>
-            <h2 className="serif" style={{ fontSize: "clamp(40px, 4vw, 68px)", lineHeight: 1.02, margin: 0, letterSpacing: "-0.02em", maxWidth: "18ch" }}>
-              Ongoing support after incorporation, when it is needed.
-            </h2>
+          
+          {/* CORE SERVICES */}
+          <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 80, marginBottom: 60 }}>
+            <div>
+              <div className="caps mono" style={{ fontSize: 11, color: "rgba(244,241,234,.55)" }}>Core Focus</div>
+              <div style={{ fontSize: 13, color: "rgba(244,241,234,.4)", marginTop: 12, lineHeight: 1.4 }}>
+                Primary services for international businesses launching in Brazil.
+              </div>
+            </div>
+            <div>
+              <h2 className="serif" style={{ fontSize: "clamp(36px, 3.5vw, 60px)", lineHeight: 1.05, margin: 0, letterSpacing: "-0.02em", maxWidth: "20ch" }}>
+                Company Formation & Executive Advisory.
+              </h2>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40, marginTop: 48 }}>
+                {COFORMA_CORE_SERVICES.map((s) => (
+                  <div key={s.key} style={{ borderTop: `1px solid rgba(244,241,234,.25)`, paddingTop: 28 }}>
+                    <div className="mono" style={{ fontSize: 12, color: accent, marginBottom: 12 }}>{s.num} — Core Practice</div>
+                    <h3 className="serif" style={{ fontSize: 34, lineHeight: 1.1, margin: 0, letterSpacing: "-0.01em" }}>{s.title}</h3>
+                    <p style={{ fontSize: 15, lineHeight: 1.55, color: "rgba(244,241,234,.75)", marginTop: 16 }}>{s.brief}</p>
+                    <a href="#contact" style={{ display: "inline-block", marginTop: 20, color: paper, fontSize: 13, textDecoration: "underline", textUnderlineOffset: 4 }}>Enquire about {s.title.toLowerCase()} →</a>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {COFORMA_SERVICES.map((s, i) => (
-              <li key={s.key} style={{ borderTop: `1px solid rgba(244,241,234,.18)`, padding: "40px 0", display: "grid", gridTemplateColumns: "80px 260px 1fr 120px", gap: 40, alignItems: "baseline" }}>
-                <div className="mono" style={{ fontSize: 13, color: "rgba(244,241,234,.55)" }}>{s.num}</div>
-                <div className="serif" style={{ fontSize: 34, lineHeight: 1.05, letterSpacing: "-0.01em" }}>{s.title}</div>
-                <div style={{ fontSize: 16, lineHeight: 1.5, color: "rgba(244,241,234,.75)", maxWidth: 520 }}>{s.brief}</div>
-                <a href="#" style={{ color: paper, fontSize: 13, textDecoration: "none", justifySelf: "end", opacity: .8 }} className="mono caps">Read →</a>
-              </li>
-            ))}
-            <li style={{ borderTop: `1px solid rgba(244,241,234,.18)` }} />
-          </ul>
+
+          {/* SECONDARY / ONGOING SERVICES */}
+          <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 80, marginTop: 100, borderTop: `1px solid rgba(244,241,234,.15)`, paddingTop: 80 }}>
+            <div>
+              <div className="caps mono" style={{ fontSize: 11, color: "rgba(244,241,234,.55)" }}>Subsequent Support</div>
+              <div style={{ fontSize: 13, color: "rgba(244,241,234,.4)", marginTop: 12, lineHeight: 1.4 }}>
+                Operational continuity once incorporation is complete.
+              </div>
+            </div>
+            <div>
+              <h3 className="serif" style={{ fontSize: 32, margin: 0, letterSpacing: "-0.01em", opacity: .9 }}>
+                Ongoing Corporate & Regulatory Practices
+              </h3>
+              <ul style={{ listStyle: "none", padding: 0, margin: "40px 0 0 0" }}>
+                {COFORMA_ONGOING_SERVICES.map((s) => (
+                  <li key={s.key} style={{ borderTop: `1px solid rgba(244,241,234,.12)`, padding: "28px 0", display: "grid", gridTemplateColumns: "60px 240px 1fr 140px", gap: 30, alignItems: "baseline" }}>
+                    <div className="mono" style={{ fontSize: 12, color: "rgba(244,241,234,.4)" }}>{s.num}</div>
+                    <div className="serif" style={{ fontSize: 24, lineHeight: 1.1, letterSpacing: "-0.01em" }}>{s.title}</div>
+                    <div style={{ fontSize: 14, lineHeight: 1.5, color: "rgba(244,241,234,.65)" }}>{s.brief}</div>
+                    {s.href && s.href !== "#" ? (
+                      <a href={s.href} style={{ color: "#d2906b", fontSize: 12, textDecoration: "none", justifySelf: "end" }} className="mono caps">Practice Info →</a>
+                    ) : (
+                      <span style={{ color: "rgba(244,241,234,.3)", fontSize: 12, justifySelf: "end" }} className="mono caps">On Demand</span>
+                    )}
+                  </li>
+                ))}
+                <li style={{ borderTop: `1px solid rgba(244,241,234,.12)` }} />
+              </ul>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -149,13 +188,12 @@ function HomeBroadsheet({ tweaks }) {
             <h2 className="serif" style={{ fontSize: "clamp(40px, 4vw, 68px)", lineHeight: 1.02, margin: 0, letterSpacing: "-0.02em", maxWidth: "20ch" }}>
               From first email to a working business, with time built in for care and follow-through.
             </h2>
-            <div style={{ marginTop: 72, display: "grid", gridTemplateColumns: "repeat(5, 1fr)", position: "relative" }}>
+            <div style={{ marginTop: 72, display: "grid", gridTemplateColumns: "repeat(4, 1fr)", position: "relative" }}>
               {[
                 { w: "Week 0", h: "Enquiry", b: "A short written exchange to understand what you are setting up." },
                 { w: "Week 1", h: "Documents", b: "We gather the information and corporate documents needed to prepare the structure and filings accurately." },
-                { w: "Week 1–2", h: "Structure memo", b: "A clear memo in English: recommended vehicle, tax regime, sector notes, and next steps." },
                 { w: "Week 2–3", h: "Filing", b: "Registration and filing steps are progressed with room for follow-up, corrections, and practical adjustments." },
-                { w: "Week 3–5", h: "Setup complete", b: "Once the business is registered, we move into the practical next phase: tax ID, certificates, introductions, and ongoing support." },
+                { w: "Week 3–5+", h: "Setup complete", b: "Once incorporated, we transition into ongoing operational support: accounting, tax compliance, HR, and governance.", link: true },
               ].map((s, i) => (
                 <div key={i} style={{
                   padding: "24px 20px 0 0",
@@ -167,6 +205,11 @@ function HomeBroadsheet({ tweaks }) {
                   <div className="mono caps" style={{ fontSize: 10, color: accent, letterSpacing: ".14em" }}>{s.w}</div>
                   <div className="serif" style={{ fontSize: 22, lineHeight: 1.15, marginTop: 10, letterSpacing: "-0.01em" }}>{s.h}</div>
                   <p style={{ fontSize: 13, lineHeight: 1.55, color: "rgba(20,19,17,.65)", marginTop: 12 }}>{s.b}</p>
+                  {s.link && (
+                    <a href="accounting-compliance.html" style={{ fontSize: 11, color: accent, textDecoration: "underline", textUnderlineOffset: 3, display: "inline-block", marginTop: 8 }} className="mono caps">
+                      Accounting & Compliance →
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -174,18 +217,15 @@ function HomeBroadsheet({ tweaks }) {
         </div>
       </section>
 
-      {/* SANDRA — the person */}
       <section style={{ maxWidth: 1360, margin: "0 auto", padding: "120px 40px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
           <div style={{ aspectRatio: "4/5", background: `url(assets/building-monotone.jpg) center/cover`, filter: "grayscale(1) contrast(1.02)" }} />
           <div>
             <div className="caps mono" style={{ fontSize: 11, color: muted, marginBottom: 24 }}>— The counsel</div>
             <blockquote className="serif" style={{ fontSize: "clamp(32px, 3vw, 52px)", lineHeight: 1.12, margin: 0, letterSpacing: "-0.015em" }}>
-              "Foreign clients rarely want more paperwork. They want to know that someone competent is handling it and will tell them when there is anything to know."
+              "Foreign clients rarely want more paperwork. They want to know that someone competent is handling it and reporting back. That is what I do. I make sure the filings are correct, the deadlines are met, and the business is set up to operate in Brazil."
             </blockquote>
             <div style={{ marginTop: 40, fontSize: 14, color: muted }}>
-              <div style={{ fontWeight: 500, color: ink }}>Sandra ——, Founding Counsel</div>
-              <div>OAB/SP · IP and corporate law · Practising since 1993</div>
             </div>
           </div>
         </div>
@@ -200,14 +240,14 @@ function HomeBroadsheet({ tweaks }) {
 function BroadsheetNav({ ink, muted, rule }) {
   return (
     <nav style={{ padding: "22px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", maxWidth: 1360, margin: "0 auto" }}>
-      <a href="#" style={{ textDecoration: "none", color: ink, display: "flex", alignItems: "baseline", gap: 12 }}>
+      <a href="index.html" style={{ textDecoration: "none", color: ink, display: "flex", alignItems: "baseline", gap: 12 }}>
         <span className="serif" style={{ fontSize: 28, letterSpacing: "-0.02em" }}>CoForma</span>
         <span className="mono caps" style={{ fontSize: 10, color: muted }}>est. 2001</span>
       </a>
       <div style={{ display: "flex", gap: 36, alignItems: "center" }}>
-        {["Company Formation", "Trademarks", "Compliance", "About"].map((l) => (
-          <a key={l} href="#" style={{ textDecoration: "none", color: ink, fontSize: 14 }}>{l}</a>
-        ))}
+        <a href="index.html#services" style={{ textDecoration: "none", color: ink, fontSize: 14 }}>Company Formation</a>
+        <a href="index.html#services" style={{ textDecoration: "none", color: ink, fontSize: 14 }}>Consulting</a>
+        <a href="accounting-compliance.html" style={{ textDecoration: "none", color: ink, fontSize: 14 }}>Accounting & Compliance</a>
         <a href="#contact" style={{ textDecoration: "none", color: ink, fontSize: 13, borderBottom: `1px solid ${ink}`, paddingBottom: 2 }}>Contact →</a>
       </div>
     </nav>
@@ -221,11 +261,11 @@ function BroadsheetFooter({ ink, paper, muted, rule }) {
         <div>
           <div className="serif" style={{ fontSize: 32, letterSpacing: "-0.02em" }}>CoForma</div>
           <div style={{ fontSize: 13, color: muted, marginTop: 12, maxWidth: 320, lineHeight: 1.5 }}>
-            Foreign investors, Brazilian entities. São Paulo since 2001.
+            Company Formnations in Brazil. São Paulo since 2001.
           </div>
         </div>
         {[["Practice", ["Company Formation", "Trademarks", "Accounting", "Compliance"]],
-          ["Firm", ["About", "Sandra", "English enquiries", "Press"]],
+          ["Firm", ["About", "English enquiries", "Press"]],
           ["Contact", ["formations@coforma.com.br", "São Paulo, SP", "Response < 1 business day"]]].map(([h, items], i) => (
           <div key={i}>
             <div className="caps mono" style={{ fontSize: 10, color: muted, marginBottom: 16 }}>{h}</div>
@@ -236,7 +276,7 @@ function BroadsheetFooter({ ink, paper, muted, rule }) {
         ))}
       </div>
       <div style={{ maxWidth: 1360, margin: "60px auto 0", display: "flex", justifyContent: "space-between", fontSize: 11, color: muted }} className="mono caps">
-        <span>© 2026 CoForma Consultoria</span>
+        <span>© 2001 to 2026 CoForma Consultoria</span>
         <span>coforma.com.br</span>
       </div>
     </footer>
