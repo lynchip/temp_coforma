@@ -121,7 +121,7 @@ function HomeBroadsheet({ tweaks }) {
       {/* SERVICES — Tiered structure: Core vs Ongoing */}
       <section id="services" style={{ background: ink, color: paper, padding: "120px 0" }}>
         <div style={{ maxWidth: 1360, margin: "0 auto", padding: "0 40px" }}>
-          
+
           {/* CORE SERVICES */}
           <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 80, marginBottom: 60 }}>
             <div>
@@ -223,7 +223,7 @@ function HomeBroadsheet({ tweaks }) {
           <div>
             <div className="caps mono" style={{ fontSize: 11, color: muted, marginBottom: 24 }}>— The counsel</div>
             <blockquote className="serif" style={{ fontSize: "clamp(32px, 3vw, 52px)", lineHeight: 1.12, margin: 0, letterSpacing: "-0.015em" }}>
-              "Foreign clients rarely want more paperwork. They want to know that someone competent is handling it and reporting back. That is what I do. I make sure the filings are correct, the deadlines are met, and the business is set up to operate in Brazil."
+              "Foreign clients rarely want more paperwork. They want to know that someone competent is handling it and reporting back. That is what we do. We make sure the filings are correct, the deadlines are met, and the business is set up to operate in Brazil."
             </blockquote>
             <div style={{ marginTop: 40, fontSize: 14, color: muted }}>
             </div>
@@ -257,16 +257,15 @@ function BroadsheetNav({ ink, muted, rule }) {
 function BroadsheetFooter({ ink, paper, muted, rule }) {
   return (
     <footer style={{ background: paper, color: ink, borderTop: `1px solid ${rule}`, padding: "60px 40px 40px" }}>
-      <div style={{ maxWidth: 1360, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 60 }}>
+      <div style={{ maxWidth: 1360, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: 60 }}>
         <div>
           <div className="serif" style={{ fontSize: 32, letterSpacing: "-0.02em" }}>CoForma</div>
           <div style={{ fontSize: 13, color: muted, marginTop: 12, maxWidth: 320, lineHeight: 1.5 }}>
-            Company Formnations in Brazil. São Paulo since 2001.
+            Company Formations in Brazil. São Paulo since 2001.
           </div>
         </div>
         {[["Practice", ["Company Formation", "Trademarks", "Accounting", "Compliance"]],
-          ["Firm", ["About", "English enquiries", "Press"]],
-          ["Contact", ["formations@coforma.com.br", "São Paulo, SP", "Response < 1 business day"]]].map(([h, items], i) => (
+        ["Contact", ["formations@coforma.com.br", "São Paulo, SP", "Response < 1 business day"]]].map(([h, items], i) => (
           <div key={i}>
             <div className="caps mono" style={{ fontSize: 10, color: muted, marginBottom: 16 }}>{h}</div>
             {items.map((it) => (
@@ -276,7 +275,7 @@ function BroadsheetFooter({ ink, paper, muted, rule }) {
         ))}
       </div>
       <div style={{ maxWidth: 1360, margin: "60px auto 0", display: "flex", justifyContent: "space-between", fontSize: 11, color: muted }} className="mono caps">
-        <span>© 2001 to 2026 CoForma Consultoria</span>
+        <span>© 2001 to 2026 CoForma Consulting</span>
         <span>coforma.com.br</span>
       </div>
     </footer>
