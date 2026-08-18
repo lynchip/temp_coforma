@@ -86,7 +86,7 @@ function HomeBroadsheet({ tweaks }) {
           </div>
           <figcaption className="mono caps" style={{ fontSize: 11, color: muted, padding: "14px 0", display: "flex", justifyContent: "space-between", borderBottom: `1px solid ${rule}` }}>
             <span>Fig. 01 — São Paulo, seat of business</span>
-            <span>Placeholder · client photography to follow</span>
+            <span>Avenida Paulista</span>
           </figcaption>
         </figure>
       </section>
