@@ -54,6 +54,8 @@ function TrademarksPage() {
             </ul>
           </div>
         </div>
+      </section>
+
       {/* PROPRIETARY INFRASTRUCTURE SECTION */}
       <section style={{ maxWidth: 1360, margin: "0 auto", padding: "80px 40px 100px", borderTop: `1px solid ${rule}` }}>
         <div style={{ display: "grid", gridTemplateColumns: "260px 1fr", gap: 80 }}>
