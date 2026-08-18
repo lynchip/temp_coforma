@@ -47,6 +47,7 @@ function TrademarksPage() {
             <ul style={{ listStyle: "none", padding: 0, margin: 0, fontSize: 14, lineHeight: 1.9 }}>
               <li>✓ Comprehensive INPI Pre-Filing Trademark Searches</li>
               <li>✓ Application Drafting & Class Classification (Nice System)</li>
+              <li>✓ Cost per application is US$275 inclusive of professional and government fees.</li>
               <li>✓ Weekly INPI Gazette (RPI) Monitoring & Watch Service</li>
               <li>✓ Oppositions, Nullity Actions & Administrative Appeals</li>
               <li>✓ 10-Year Renewal Filings & Ownership Transfers</li>
