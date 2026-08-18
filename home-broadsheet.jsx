@@ -240,9 +240,10 @@ function HomeBroadsheet({ tweaks }) {
 function BroadsheetNav({ ink, muted, rule }) {
   return (
     <nav style={{ padding: "22px 40px", display: "flex", alignItems: "center", justifyContent: "space-between", maxWidth: 1360, margin: "0 auto" }}>
-      <a href="index.html" style={{ textDecoration: "none", color: ink, display: "flex", alignItems: "baseline", gap: 12 }}>
+      <a href="index.html" style={{ textDecoration: "none", color: ink, display: "flex", alignItems: "center", gap: 12 }}>
+        <img src="assets/favicon.png" alt="CoForma Logo" style={{ width: 28, height: 28, borderRadius: 4, objectFit: "contain" }} />
         <span className="serif" style={{ fontSize: 28, letterSpacing: "-0.02em" }}>CoForma</span>
-        <span className="mono caps" style={{ fontSize: 10, color: muted }}>est. 2001</span>
+        <span className="mono caps" style={{ fontSize: 10, color: muted, alignSelf: "flex-end", marginBottom: 3 }}>est. 2001</span>
       </a>
       <div style={{ display: "flex", gap: 36, alignItems: "center" }}>
         <a href="index.html#services" style={{ textDecoration: "none", color: ink, fontSize: 14 }}>Company Formation</a>
@@ -259,7 +260,10 @@ function BroadsheetFooter({ ink, paper, muted, rule }) {
     <footer style={{ background: paper, color: ink, borderTop: `1px solid ${rule}`, padding: "60px 40px 40px" }}>
       <div style={{ maxWidth: 1360, margin: "0 auto", display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: 60 }}>
         <div>
-          <div className="serif" style={{ fontSize: 32, letterSpacing: "-0.02em" }}>CoForma</div>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <img src="assets/favicon.png" alt="CoForma Logo" style={{ width: 26, height: 26, borderRadius: 4, objectFit: "contain" }} />
+            <div className="serif" style={{ fontSize: 32, letterSpacing: "-0.02em" }}>CoForma</div>
+          </div>
           <div style={{ fontSize: 13, color: muted, marginTop: 12, maxWidth: 320, lineHeight: 1.5 }}>
             Company Formations in Brazil. São Paulo since 2001.
           </div>
