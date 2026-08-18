@@ -35,7 +35,7 @@ const COFORMA_ONGOING_SERVICES = [
     num: "04", 
     title: "Trademarks & IP Protection", 
     brief: "Trademark searching, INPI filings, brand portfolio defense, and ongoing monitoring against infringement in Brazil.",
-    href: "#" 
+    href: "ip-services.html" 
   },
   { 
     key: "compliance", 
