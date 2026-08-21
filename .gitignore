@@ -3,3 +3,10 @@
 
 # Common local/editor files
 .DS_Store
+
+# Ignore new files by default; only publish HTML and JSX source files.
+*
+!*/
+!*.html
+!*.jsx
+!.gitignore
