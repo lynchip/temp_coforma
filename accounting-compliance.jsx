@@ -24,7 +24,7 @@ function AccountingCompliancePage() {
       {/* HERO SECTION */}
       <section style={{ maxWidth: 1360, margin: "0 auto", padding: "100px 40px 80px" }}>
         <div className="caps mono" style={{ fontSize: 11, color: accent, marginBottom: 24 }}>
-          № 002 — Subsequent Practice
+          № 002 — Post Incorporation in Brazil
         </div>
         <h1 className="serif" style={{ fontSize: "clamp(60px, 8vw, 120px)", lineHeight: 0.95, letterSpacing: "-0.03em", margin: 0, maxWidth: "16ch" }}>
           Accounting & Compliance<br />in Brazil

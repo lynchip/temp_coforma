@@ -17,7 +17,7 @@ function TrademarksPage() {
         <div style={{ maxWidth: 1360, margin: "0 auto", padding: "10px 40px", display: "flex", justifyContent: "space-between", fontSize: 11 }} className="mono caps">
           <span style={{ color: muted }}><a href="index.html" style={{ textDecoration: "none" }}>← Back to CoForma Main</a></span>
           <span style={{ color: muted }}>Practice Brief — Brand Protection & INPI Filings</span>
-          <span style={{ color: muted }}>Updated 2026</span>
+          <span style={{ color: muted }}>English - Portuguese</span>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ function TrademarksPage() {
           <div>
             <div className="caps mono" style={{ fontSize: 11, color: accent }}>Proprietary Technology</div>
             <div style={{ fontSize: 13, color: muted, marginTop: 12, lineHeight: 1.5 }}>
-              In-house database & multi-vector matching engine built over 11 years.
+              In-house database & multi-vector matching.
             </div>
           </div>
           <div>
@@ -78,7 +78,7 @@ function TrademarksPage() {
                 <div className="mono" style={{ fontSize: 11, color: accent, marginBottom: 12 }}>01 · PRE-FILING SEARCH</div>
                 <h3 className="serif" style={{ fontSize: 24, margin: 0, lineHeight: 1.15 }}>Deep Historical Database</h3>
                 <p style={{ fontSize: 14, lineHeight: 1.6, color: "rgba(20,19,17,.7)", marginTop: 14 }}>
-                  Beyond official trademark office tools, we query our 11-year internal database across exact, fuzzy, semantic, and applicant data to uncover hidden conflicts before filing.
+                  Beyond official trademark office tools, we query our internal database to uncover hidden conflicts before filing.
                 </p>
               </div>
 
@@ -86,15 +86,15 @@ function TrademarksPage() {
                 <div className="mono" style={{ fontSize: 11, color: accent, marginBottom: 12 }}>02 · WEEKLY WATCH SERVICE</div>
                 <h3 className="serif" style={{ fontSize: 24, margin: 0, lineHeight: 1.15 }}>Multi-Vector Weekly Monitoring</h3>
                 <p style={{ fontSize: 14, lineHeight: 1.6, color: "rgba(20,19,17,.7)", marginTop: 14 }}>
-                  Every week, we process raw official publication files to detect infringing applications. Non-exact and phonetic matching catches visual or semantic copycats standard searches miss.
+                  Every week, we process raw official publication files to detect infringing applications. Non-exact and phonetic matching catches similarities that standard searches can miss.
                 </p>
               </div>
 
               <div style={{ borderTop: `1px solid ${ink}`, paddingTop: 20 }}>
                 <div className="mono" style={{ fontSize: 11, color: accent, marginBottom: 12 }}>03 · MARKET AUDITS</div>
-                <h3 className="serif" style={{ fontSize: 24, margin: 0, lineHeight: 1.15 }}>On-Demand Commercial Audits</h3>
+                <h3 className="serif" style={{ fontSize: 24, margin: 0, lineHeight: 1.15 }}>On-Demand Commercial Searches</h3>
                 <p style={{ fontSize: 14, lineHeight: 1.6, color: "rgba(20,19,17,.7)", marginTop: 14 }}>
-                  On request, we perform specialized investigations across Brazilian corporate entity databases and active commercial channels to uncover unregistered trademark squatted assets.
+                  On request, we perform specialized searches to identify infringements and opportunities.
                 </p>
               </div>
             </div>

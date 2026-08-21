@@ -18,7 +18,7 @@ function HomeBroadsheet({ tweaks }) {
       <div style={{ borderTop: `1px solid ${rule}`, borderBottom: `1px solid ${rule}` }}>
         <div style={{ maxWidth: 1360, margin: "0 auto", padding: "10px 40px", display: "flex", justifyContent: "space-between", fontSize: 11 }} className="mono caps">
           <span style={{ color: muted }}>São Paulo · Founded 2001</span>
-          <span style={{ color: muted }}>Vol. XXV — For counsel abroad</span>
+          <span style={{ color: muted }}>Vol. XXV — Company Formations in Brazil</span>
           <span style={{ color: muted }}>English · Português</span>
         </div>
       </div>
@@ -27,7 +27,7 @@ function HomeBroadsheet({ tweaks }) {
       <section style={{ maxWidth: 1360, margin: "0 auto", padding: "120px 40px 100px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 0 }}>
           <div className="caps mono" style={{ fontSize: 11, color: muted, marginBottom: 40 }}>
-            <span style={{ borderBottom: `1px solid ${accent}`, paddingBottom: 4, color: accent }}>№ 001</span>
+            <span style={{ color: accent }}>№ 001</span>
             <span style={{ marginLeft: 20 }}>Company formation · Trademarks · Compliance</span>
           </div>
           {tweaks.headline === "incorporate" ? (
@@ -221,7 +221,7 @@ function HomeBroadsheet({ tweaks }) {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
           <div style={{ aspectRatio: "4/5", background: `url(assets/building-monotone.jpg) center/cover`, filter: "grayscale(1) contrast(1.02)" }} />
           <div>
-            <div className="caps mono" style={{ fontSize: 11, color: muted, marginBottom: 24 }}>— The counsel</div>
+            <div className="caps mono" style={{ fontSize: 11, color: muted, marginBottom: 24 }}>— Company Formations in Brazil</div>
             <blockquote className="serif" style={{ fontSize: "clamp(32px, 3vw, 52px)", lineHeight: 1.12, margin: 0, letterSpacing: "-0.015em" }}>
               "Foreign clients rarely want more paperwork. They want to know that someone competent is handling it and reporting back. That is what we do. We make sure the filings are correct, the deadlines are met, and the business is set up to operate in Brazil."
             </blockquote>
@@ -279,7 +279,7 @@ function BroadsheetFooter({ ink, paper, muted, rule }) {
         ))}
       </div>
       <div style={{ maxWidth: 1360, margin: "60px auto 0", display: "flex", justifyContent: "space-between", fontSize: 11, color: muted }} className="mono caps">
-        <span>© 2001 to 2026 CoForma Consulting</span>
+        <span>© 2001 to 2026 CoForma Company Formations</span>
         <span>coforma.com.br</span>
       </div>
     </footer>
