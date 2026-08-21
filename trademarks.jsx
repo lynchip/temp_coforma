@@ -16,7 +16,7 @@ function TrademarksPage() {
       <div style={{ borderTop: `1px solid ${rule}`, borderBottom: `1px solid ${rule}` }}>
         <div style={{ maxWidth: 1360, margin: "0 auto", padding: "10px 40px", display: "flex", justifyContent: "space-between", fontSize: 11 }} className="mono caps">
           <span style={{ color: muted }}><a href="index.html" style={{ textDecoration: "none" }}>← Back to CoForma Main</a></span>
-          <span style={{ color: muted }}>Practice Brief — Brand Protection & INPI Filings</span>
+          <span style={{ color: muted }}>Practice Brief — Brand Protection & Trademark Registration</span>
           <span style={{ color: muted }}>English - Portuguese</span>
         </div>
       </div>
@@ -32,24 +32,24 @@ function TrademarksPage() {
         <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 80, marginTop: 60, alignItems: "start" }}>
           <div>
             <p className="news" style={{ fontSize: 24, lineHeight: 1.45, margin: 0, fontWeight: 400 }}>
-              Protecting brand assets in Brazil requires direct registration with INPI (National Institute of Industrial Property) and diligent weekly monitoring against third-party infringement.
+              Protecting trademarks and brands in Brazil requires careful filing and diligent weekly monitoring for potentially conflicting third-party applications.
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.6, color: "rgba(20,19,17,.75)", marginTop: 28 }}>
               CoForma assists foreign companies, founders, and international counsel to register, monitor, and defend their trademarks, logos, and proprietary assets under Brazilian intellectual property law.
             </p>
             <div style={{ marginTop: 36, display: "flex", gap: 24, alignItems: "center" }}>
               <a href="#contact" style={{ background: ink, color: paper, padding: "14px 24px", textDecoration: "none", fontSize: 13, letterSpacing: ".04em" }}>Enquire about IP protection →</a>
-              <a href="index.html#services" style={{ color: ink, textDecoration: "underline", textUnderlineOffset: 5, fontSize: 13 }}>All practice areas</a>
+              <a href="index.html#services" style={{ color: ink, textDecoration: "underline", textUnderlineOffset: 5, fontSize: 13 }}>Practice areas</a>
             </div>
           </div>
           <div style={{ paddingLeft: 32, borderLeft: `1px solid ${rule}` }}>
             <div className="caps mono" style={{ fontSize: 10, color: muted, marginBottom: 16 }}>Core IP Services</div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, fontSize: 14, lineHeight: 1.9 }}>
-              <li>✓ Comprehensive INPI Pre-Filing Trademark Searches</li>
-              <li>✓ Application Drafting & Class Classification (Nice System)</li>
-              <li>✓ Cost per application is US$275 inclusive of professional and government fees.</li>
-              <li>✓ Weekly INPI Gazette (RPI) Monitoring & Watch Service</li>
-              <li>✓ Oppositions, Nullity Actions & Administrative Appeals</li>
+              <li>✓ Comprehensive Pre-Filing Trademark Searches</li>
+              <li>✓ Application Drafting & Classification under the Nice Classification</li>
+              <li>✓ Standard applications cost US$275, including professional and official filing fees.</li>
+              <li>✓ Weekly Monitoring & Watch Service</li>
+              <li>✓ Challenges to conflicting applications, cancellation proceedings, and administrative appeals</li>
               <li>✓ 10-Year Renewal Filings & Ownership Transfers</li>
             </ul>
           </div>
@@ -62,7 +62,7 @@ function TrademarksPage() {
           <div>
             <div className="caps mono" style={{ fontSize: 11, color: accent }}>Proprietary Technology</div>
             <div style={{ fontSize: 13, color: muted, marginTop: 12, lineHeight: 1.5 }}>
-              In-house database & multi-vector matching.
+              In-house database & similarity matching.
             </div>
           </div>
           <div>
@@ -70,7 +70,7 @@ function TrademarksPage() {
               Beyond Standard Portal Searches: Multi-Layered Brand Protection
             </h2>
             <p className="news" style={{ fontSize: 20, lineHeight: 1.5, color: "rgba(20,19,17,.8)", marginTop: 24 }}>
-              Standard official search tools look only for exact text matches. Over more than a decade, CoForma has maintained a proprietary database of all Brazilian trademark filings, powered by custom multi-vector search algorithms.
+              Standard official search tools look only for exact text matches. Over more than a decade, CoForma has maintained a proprietary database from years of Brazilian trademark filings, using similarity search algorithms.
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40, marginTop: 48 }}>
@@ -84,9 +84,9 @@ function TrademarksPage() {
 
               <div style={{ borderTop: `1px solid ${ink}`, paddingTop: 20 }}>
                 <div className="mono" style={{ fontSize: 11, color: accent, marginBottom: 12 }}>02 · WEEKLY WATCH SERVICE</div>
-                <h3 className="serif" style={{ fontSize: 24, margin: 0, lineHeight: 1.15 }}>Multi-Vector Weekly Monitoring</h3>
+                <h3 className="serif" style={{ fontSize: 24, margin: 0, lineHeight: 1.15 }}>Monitoring for Similar Marks</h3>
                 <p style={{ fontSize: 14, lineHeight: 1.6, color: "rgba(20,19,17,.7)", marginTop: 14 }}>
-                  Every week, we process raw official publication files to detect infringing applications. Non-exact and phonetic matching catches similarities that standard searches can miss.
+                  We review official INPI publications every week and use phonetic and similarity-based searches to identify potentially conflicting applications.
                 </p>
               </div>
 
@@ -102,7 +102,7 @@ function TrademarksPage() {
             <div style={{ marginTop: 40, padding: "24px 32px", background: "rgba(20,19,17,.04)", borderLeft: `3px solid ${accent}` }}>
               <div className="mono caps" style={{ fontSize: 10, color: accent, marginBottom: 6 }}>Proven Track Record</div>
               <p style={{ fontSize: 14, lineHeight: 1.55, margin: 0, color: "rgba(20,19,17,.85)" }}>
-                <strong>Years of Proactive Warning:</strong> Our multi-layered search system has successfully alerted international clients to infringing filings that standard exact-match searches completely missed—enabling early legal oppositions long before commercial conflict occurred.
+                <strong>A Track Record of Early Alerts:</strong> Our multi-layered search system has successfully alerted international clients to infringing filings that standard exact-match searches completely missed—enabling early legal oppositions long before commercial conflict occurred.
               </p>
             </div>
 
@@ -121,33 +121,33 @@ function TrademarksPage() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, borderTop: `1px solid rgba(244,241,234,.18)`, paddingTop: 60 }}>
             <div style={{ borderRight: `1px solid rgba(244,241,234,.12)`, paddingRight: 40 }}>
-              <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>01 · INPI SEARCH & REGISTRATION</div>
+              <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>01 · TRADEMARK SEARCH & REGISTRATION</div>
               <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Trademark Search & Filing</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                Brazil operates on a first-to-file system. We conduct thorough prior-art searches in the INPI database to evaluate potential conflicts before filing, ensuring accurate classification under international standards.
+                Brazil operates on a first-to-file system. We conduct thorough searches in the trademark database to evaluate potential conflicts before filing.
               </p>
             </div>
             <div>
               <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>02 · WEEKLY WATCH SERVICE</div>
-              <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Weekly RPI Monitoring</h3>
+              <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Weekly monitoring of official trademark publications</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                INPI publishes official updates weekly in the <em>Revista da Propriedade Industrial</em>. We continuously monitor these publications to detect conflicting third-party filings during the strict 60-day legal opposition window.
+                The Brazilian Trademark Office publishes official updates on a weekly basis and we continuously monitor these publications to detect conflicting applications that might affect your trademarks.
               </p>
             </div>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, borderTop: `1px solid rgba(244,241,234,.12)`, paddingTop: 60, marginTop: 60 }}>
             <div style={{ borderRight: `1px solid rgba(244,241,234,.12)`, paddingRight: 40 }}>
               <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>03 · DEFENSE & LITIGATION</div>
-              <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Oppositions & IP Appeals</h3>
+              <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Oppositions & Appeals</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                When third parties attempt to register confusingly similar marks, or if INPI issues an administrative office action, we prepare formal legal oppositions, responses, and administrative appeals to safeguard your rights.
+                When third parties attempt to register confusingly similar marks, or if the Brazilian Trademark Office issues an administrative office action, we prepare formal legal oppositions, responses, and administrative appeals to safeguard your rights.
               </p>
             </div>
             <div>
               <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>04 · PORTFOLIO MAINTENANCE</div>
               <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Renewals & Ownership Filings</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                Brazilian trademarks are granted for 10-year terms. We manage timely renewal filings, recordals of corporate name changes, ownership transfers, and licensing agreements with foreign parent companies.
+                Brazilian trademarks are granted for 10-year terms. We manage timely renewal filings, recording company name changes, ownership transfers, and licensing agreements with foreign parent companies.
               </p>
             </div>
           </div>
@@ -165,7 +165,7 @@ function TrademarksPage() {
           </div>
           <div>
             <p style={{ fontSize: 16, lineHeight: 1.6, color: muted }}>
-              Whether you need a pre-filing search, immediate INPI application, or monitoring for an existing international brand portfolio, our team provides direct bilingual support.
+              Whether you need a pre-filing search, trademark filing, or monitoring for an existing international brand portfolio, our team provides support.
             </p>
             <a href="#contact" style={{ display: "inline-block", marginTop: 24, background: ink, color: paper, padding: "16px 28px", textDecoration: "none", fontSize: 14, letterSpacing: ".04em" }}>
               Enquire about Trademarks →

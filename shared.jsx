@@ -3,7 +3,7 @@
 const COFORMA_STATS = [
   { value: "25+", label: "Years operating in Brazil" },
   { value: "100s", label: "Companies formed" },
-  { value: "100s", label: "Trademarks filed at INPI" },
+  { value: "100s", label: "Trademarks filed at the Brazilian Trademark Office" },
   { value: "EN·PT", label: "Bilingual counsel" },
 ];
 
@@ -12,13 +12,13 @@ const COFORMA_CORE_SERVICES = [
     key: "formation",
     num: "01",
     title: "Company Formation",
-    brief: "Full-service incorporation in Brazil: legal structuring, CNPJ registration, state/municipal licenses, and bank account setup guidance for foreign investors and enterprise clients."
+    brief: "Company formation in Brazil: legal structuring, CNPJ registration, state/municipal licenses, and bank account setup guidance for foreign investors and enterprise clients."
   },
   {
     key: "consulting",
     num: "02",
     title: "Business Consulting",
-    brief: "Strategic advisory for international counsel and executives navigating Brazilian market entry, regulatory barriers, corporate restructuring, and day-to-day operational execution."
+    brief: "Strategic advisory for international counsel and executives navigating the Brazilian market, regulatory barriers, corporate restructuring, and day-to-day operational execution."
   },
 ];
 
@@ -34,21 +34,21 @@ const COFORMA_ONGOING_SERVICES = [
     key: "trademarks",
     num: "04",
     title: "Trademarks & IP Protection",
-    brief: "Trademark searching, INPI filings, brand portfolio defense, and ongoing monitoring against infringement in Brazil.",
+    brief: "Trademark searching, applications, brand defense, and ongoing monitoring against infringement in Brazil.",
     href: "ip-services.html"
   },
   {
     key: "compliance",
     num: "05",
     title: "Corporate Governance & Housekeeping",
-    brief: "Annual filings, legal representation of foreign shareholders (BACEN/Receita), license renewals, and corporate record keeping.",
+    brief: "Annual filings, legal representation of foreign shareholders, license renewals, and corporate record keeping.",
     href: "accounting-compliance.html"
   },
   {
     key: "hr",
     num: "06",
     title: "HR & Labour Advisory",
-    brief: "Practical guidance for local employment contracts, eSocial compliance, payroll setup, and Brazilian labor law navigation.",
+    brief: "Employment contracts, payroll setup, and Brazilian labor law navigation.",
     href: "#"
   },
 ];

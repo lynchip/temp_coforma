@@ -32,7 +32,7 @@ function AccountingCompliancePage() {
         <div style={{ display: "grid", gridTemplateColumns: "1.2fr 1fr", gap: 80, marginTop: 60, alignItems: "start" }}>
           <div>
             <p className="news" style={{ fontSize: 24, lineHeight: 1.45, margin: 0, fontWeight: 400 }}>
-              Once your entity is registered, operational continuity requires structured ongoing accounting, tax declarations, and legal governance tailored for foreign shareholders.
+              Once your company is registered, you will need ongoing accounting, make tax declarations, and follow .
             </p>
             <p style={{ fontSize: 16, lineHeight: 1.6, color: "rgba(20,19,17,.75)", marginTop: 28 }}>
               Post incorporation management is essential to ensure complete tax and regulatory compliance under Brazilian law.
@@ -72,7 +72,7 @@ function AccountingCompliancePage() {
               <div className="mono" style={{ fontSize: 11, color: "#d2906b", marginBottom: 12 }}>02 · REGULATORY GOVERNANCE</div>
               <h3 className="serif" style={{ fontSize: 32, margin: 0 }}>Legal Representation & BACEN</h3>
               <p style={{ fontSize: 15, lineHeight: 1.6, color: "rgba(244,241,234,.75)", marginTop: 18 }}>
-                Foreign-owned entities must maintain a Brazilian resident legal representative before Receita Federal and the Central Bank (BACEN). Routine corporate resolutions, capital declarations, and annual corporate housekeeping.
+                Foreign-owned companies must maintain a Brazilian resident legal representative before Receita Federal and the Central Bank. Routine corporate resolutions, capital declarations, and annual corporate housekeeping.
               </p>
             </div>
           </div>

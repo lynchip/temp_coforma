@@ -103,7 +103,7 @@ function HomeBroadsheet({ tweaks }) {
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 48, marginTop: 72 }}>
               {[
-                { h: "International clients.", b: "We work with founders, investors, and operators from the United States, China, India, and other markets who need practical guidance to set up a business in Brazil." },
+                { h: "International clients.", b: "We work with counsels, agencies, founders, investors, and operators from the United States, China, India, and other markets who need practical guidance to set up a business in Brazil." },
                 { h: "Formation first.", b: "Company formation remains the core of our work. Once the business is established, we can support the next phase of compliance, accounting, and operational needs." },
                 { h: "Practical experience.", b: "Our approach is grounded in long experience with Brazilian institutions, filings, and day-to-day business realities — not just a checklist." },
               ].map((c, i) => (
@@ -132,7 +132,7 @@ function HomeBroadsheet({ tweaks }) {
             </div>
             <div>
               <h2 className="serif" style={{ fontSize: "clamp(36px, 3.5vw, 60px)", lineHeight: 1.05, margin: 0, letterSpacing: "-0.02em", maxWidth: "20ch" }}>
-                Company Formation & Executive Advisory.
+                Company Formation.
               </h2>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40, marginTop: 48 }}>
                 {COFORMA_CORE_SERVICES.map((s) => (
@@ -152,7 +152,7 @@ function HomeBroadsheet({ tweaks }) {
             <div>
               <div className="caps mono" style={{ fontSize: 11, color: "rgba(244,241,234,.55)" }}>Subsequent Support</div>
               <div style={{ fontSize: 13, color: "rgba(244,241,234,.4)", marginTop: 12, lineHeight: 1.4 }}>
-                Operational continuity once incorporation is complete.
+                Accounting and Bookkeeping services once incorporation is complete.
               </div>
             </div>
             <div>
